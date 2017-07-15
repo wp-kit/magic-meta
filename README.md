@@ -62,7 +62,7 @@ class SomePostTypeController extends Controller {
 	
 	public function index(Request $request) {
 	
-		return response()->json( SomePostType::type( 'some_type' )->transformQuery( $request ) );
+		return response()->json( SomePostType::select( 'posts.*' )->type( 'some_type' )->transformQuery( $request ) );
 		
 	}
 		 
