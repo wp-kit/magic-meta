@@ -4,7 +4,7 @@ This is a Wordpress / Eloquent PHP Component to handle PostMeta.
 
 When using Eloquent, wouldn't it be great if we could append PostMeta to the Model just as Wordpress does natively? And wouldn't be great to query data based on meta_query and tax_query parameters? This is exactly what Magic Meta handles.
 
-This PHP Component was built to run within an Illuminate Container so is perfect for frameworks such as Themosis.
+This PHP Component was built to run with Illuminate Eloquent and is perfect for frameworks such as Themosis.
 
 ## Installation
 
