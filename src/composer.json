@@ -1,6 +1,6 @@
 {
 	"name": "wp-kit/magic-meta",
-	"description": "A Wordpress / Illuminate PHP Component to handle Appending and Querying of PostMeta",
+	"description": "A Wordpress / Eloquent PHP Component to handle Appending and Querying of PostMeta",
 	"keywords": ["wordpress", "themosis", "oop", "visual composer"],
 	"homepage" : "https://github.com/wp-kit/vc-integration",
 	"license": "MIT",
