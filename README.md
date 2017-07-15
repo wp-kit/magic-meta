@@ -1,6 +1,6 @@
 # WPKit Magic Meta
 
-This is a Wordpress / Eloquent PHP Component to handle PostMeta. 
+This is a Wordpress PHP Component to handle Eloquent Appending and Querying of PostMeta.
 
 When using Eloquent, wouldn't it be great if we could append PostMeta to the Model just as Wordpress does natively? And wouldn't be great to query data based on meta_query and tax_query parameters? This is exactly what Magic Meta handles.
 
