@@ -1,0 +1,32 @@
+{
+	"name": "wp-kit/magic-meta",
+	"description": "A Wordpress / Illuminate PHP Component to handle Appending and Querying of PostMeta",
+	"keywords": ["wordpress", "themosis", "oop", "visual composer"],
+	"homepage" : "https://github.com/wp-kit/vc-integration",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Creative Little Dots",
+			"email" : "tech@creativelittledots.co.uk",
+			"homepage" : "https://creativelittledots.co.uk/",
+			"role" : "Developers"
+		}
+	],
+	"require": {
+        "php": ">=5.6.4",
+        "drewjbartlett/wordpress-eloquent": "dev-master"
+    },
+	"type": "library",
+	"autoload": {
+        "psr-4": {
+            "WPKit\\MagicMeta\\Vc\\": "src/MagicMeta" 
+        }
+    },
+    "config": {
+		"preferred-install": "dist"
+	},
+	"repositories": [
+	],
+	"scripts": {
+	}
+}
