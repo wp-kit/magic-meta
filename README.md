@@ -1,25 +1,22 @@
-# WPKit Magic Meta
+# wp-kit/magic-meta
 
-This is a Wordpress PHP Component that handles Eloquent Appending and Querying of PostMeta.
+This is a Wordpress PHP Component that handles [```Eloquent```](https://laravel.com/docs/5.4/eloquent) appending and querying of [```PostMeta```](https://codex.wordpress.org/Post_Meta_Data_Section).
 
-When using Eloquent, wouldn't it be great if we could append PostMeta to the Model just as Wordpress does natively? And wouldn't be great to query data based on meta_query and tax_query parameters? This is exactly what Magic Meta handles.
-
-This PHP Component was built to run with Illuminate Eloquent and is perfect for frameworks such as Themosis.
+When using ```Eloquent```, wouldn't it be great if we could append ```PostMeta``` to the Model just as Wordpress does natively? And wouldn't be great to query data based on ```meta_query``` and ```tax_query``` parameters? This is exactly what ```wp-kit/magic-meta``` handles.
 
 ## Installation
 
-If you're using Themosis, install via composer in the Themosis route folder, otherwise install in your theme folder:
+If you're using ```Themosis```, install via ```Composer``` in the root of your ```Themosis``` installation, otherwise install in your ```Composer``` driven theme folder:
 
 ```php
 composer require "wp-kit/magic-meta"
 ```
 
+## Usage
 
-## Using Magic Meta
+```wp-kit/magic-meta``` comes with one trait, so all you need to do is include this in your Model. 
 
-Magic Meta comes with one trait, so all you need to do is include this in your Model. 
-
-Magic Meta depends on [drewjbartlett/wordpress-eloquent](https://github.com/drewjbartlett/wordpress-eloquent) so it's best to extend the Post model provided and use the Magic Meta trait.
+```wp-kit/magic-meta``` depends on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) so it's best to extend the Post model provided and use the Magic Meta trait.
 
 ```php
 namespace App\Models;
@@ -39,7 +36,7 @@ class SomePostType extends Post {
 }
 ```
 
-By calling ::transformQuery on the Query Builder we allow the query to check for any of the following parameters. We also allow the query to check for any magic meta at root level of the parameters:
+By calling ```::transformQuery``` on the ```QueryBuilder``` we allow the query to check for any of the following parameters. We also allow the query to check for any magic meta at root level of the parameters:
 
 ```php
 [
@@ -78,4 +75,4 @@ PHP 5.6+
 
 ## License
 
-WPKit Magic Meta is open-sourced software licensed under the MIT License.
+wp-kit/magic-meta is open-sourced software licensed under the MIT License.
