@@ -14,6 +14,8 @@ composer require "wp-kit/magic-meta"
 
 ## Usage
 
+### Model
+
 ```wp-kit/magic-meta``` comes with one trait, so all you need to do is include this in your Model. 
 
 ```wp-kit/magic-meta``` depends on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) so it's best to extend the Post model provided and use the Magic Meta trait.
@@ -36,7 +38,11 @@ class SomePostType extends Post {
 }
 ```
 
-By calling ```::transformQuery``` on the ```QueryBuilder``` we allow the query to check for any of the following parameters. We also allow the query to check for any magic meta at root level of the parameters:
+### Query
+
+***Parameters***
+
+You can use ```::transformQuery``` scope on ```QueryBuilder``` to check for any of the following parameters. We also allow the query to check for any magic meta at root level of the parameters:
 
 ```php
 [
@@ -47,6 +53,8 @@ By calling ```::transformQuery``` on the ```QueryBuilder``` we allow the query t
 	'location' => 'london' // queries PostMeta key '_location'
 ]
 ```
+
+***Using transformQuery***
 
 ```php
 namespace App\Controllers;
