@@ -2,11 +2,11 @@
 
 This is a Wordpress PHP Component that handles [```Eloquent```](https://laravel.com/docs/5.4/eloquent) appending and querying of [```PostMeta```](https://codex.wordpress.org/Post_Meta_Data_Section).
 
-When using ```Eloquent```, wouldn't it be great if we could append ```PostMeta``` to the Model just as Wordpress does natively? And wouldn't be great to query data based on ```meta_query``` and ```tax_query``` parameters? This is exactly what ```wp-kit/magic-meta``` handles.
+When using ```Eloquent```, wouldn't it be great if we could append ```PostMeta``` to the Model just as Wordpress does natively? And wouldn't be great to query data based on [```meta_query```](https://codex.wordpress.org/Class_Reference/WP_Meta_Query#Accepted_Arguments) and [```tax_query```](https://codex.wordpress.org/Class_Reference/WP_Query#Taxonomy_Parameters) parameters? This is exactly what ```wp-kit/magic-meta``` handles.
 
 ## Installation
 
-If you're using ```Themosis```, install via ```Composer``` in the root of your ```Themosis``` installation, otherwise install in your ```Composer``` driven theme folder:
+If you're using [```Themosis```](http://framework.themosis.com/), install via [```Composer```](https://getcomposer.org/) in the root of your ```Themosis``` installation, otherwise install in your ```Composer``` driven theme folder:
 
 ```php
 composer require "wp-kit/magic-meta"
@@ -42,7 +42,7 @@ class SomePostType extends Post {
 
 ***Parameters***
 
-You can use ```::transformQuery``` scope on ```QueryBuilder``` to check for any of the following parameters. We also allow the query to check for any magic meta at root level of the parameters:
+You can use [```::transformQuery```](https://github.com/wp-kit/magic-meta/blob/master/src/MagicMeta/Traits/MagicMeta.php#L70) [Query Scope](https://laravel.com/docs/5.4/eloquent#query-scopes) on [```Illuminate\Database\Query\Builder```](https://github.com/illuminate/database/blob/master/Query/Builder.php) to check for any of the following parameters. We also allow the query to check for any magic meta at root level of the parameters:
 
 ```php
 [
