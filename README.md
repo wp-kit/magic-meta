@@ -18,7 +18,7 @@ composer require "wp-kit/magic-meta"
 
 ```wp-kit/magic-meta``` comes with one trait, so all you need to do is include this in your Model. 
 
-```wp-kit/magic-meta``` depends on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) so it's best to extend the Post model provided and use the Magic Meta trait.
+Based on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) you can the Post model provided and use the Magic Meta trait.
 
 ```php
 namespace App\Models;
