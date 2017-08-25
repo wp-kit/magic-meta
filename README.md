@@ -21,7 +21,7 @@ composer require "wp-kit/magic-meta"
 Based on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) you can the Post model provided and use the Magic Meta trait.
 
 ```php
-namespace App\Models;
+namespace Theme\Models;
 
 use WPEloquent\Model\Post;
 use WPKit\MagicMeta\Traits\MagicMeta;
@@ -32,7 +32,7 @@ class SomePostType extends Post {
 
 	protected $magic_meta = [
 		'_some_meta_key' => 'appended_key',
-		_location' => 'location'
+		'_location' => 'location'
 	];
 	
 }
