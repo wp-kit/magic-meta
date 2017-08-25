@@ -55,12 +55,23 @@
 	     */
 	    public function attributesToArray()
 	    {
-		    $attributes = parent::attributesToArray()
+		    $attributes = parent::attributesToArray();
 	        foreach ($this->getMagicMeta() as $meta_key => $key) {
 	            $attributes[$key] = $this->getMeta($meta_key);
 	        }
 	        return $attributes;
 	    }
+		
+		/**
+	     * Get Meta
+	     * This method is agnostic to the Meta model, as this trait can be used on Post, Category and User models
+	     *
+	     * @return string
+	     */
+		public function getMeta($meta_key) 
+		{			
+			return $this->meta()->where('meta_key', $meta_key);	
+		}
 	    
 	    /**
 	     * Where query
