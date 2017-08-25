@@ -5,7 +5,7 @@
 	use Illuminate\Database\Query\Builder;
 	use Illuminate\Http\Request;
 	
-	trait MagicMeta {
+	trait IsMagic {
 	
 	    /**
 	     * Get the magic meta of current instance
