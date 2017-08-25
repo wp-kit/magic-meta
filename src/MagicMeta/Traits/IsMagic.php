@@ -2,9 +2,6 @@
 
 	namespace WPKit\MagicMeta\Traits;
 	
-	use Illuminate\Database\Query\Builder;
-	use Illuminate\Http\Request;
-	
 	trait IsMagic {
 	
 	    /**
