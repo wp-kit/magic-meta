@@ -24,11 +24,13 @@ Based on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartle
 namespace Theme\Models;
 
 use WPEloquent\Model\Post;
-use WPKit\MagicMeta\Traits\MagicMeta;
+use WPKit\MagicMeta\Traits\IsMagic;
+use WPKit\MagicMeta\Traits\TransformsQuery;
 
 class SomePostType extends Post {
 	
-	use MagicMeta;
+	use IsMagic;
+	use TransformsQuery;
 
 	protected $magic_meta = [
 		'_some_meta_key' => 'appended_key',
