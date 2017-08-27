@@ -1,6 +1,6 @@
 # wp-kit/magic-meta
 
-This is a Wordpress PHP Component that handles [```Eloquent```](https://laravel.com/docs/5.4/eloquent) appending and querying of [```PostMeta```](https://codex.wordpress.org/Post_Meta_Data_Section).
+This is a wp-kit component that handles [```Eloquent```](https://laravel.com/docs/5.4/eloquent) appending and querying of [```PostMeta```](https://codex.wordpress.org/Post_Meta_Data_Section).
 
 When using ```Eloquent```, wouldn't it be great if we could append ```PostMeta``` to the Model just as Wordpress does natively? And wouldn't be great to query data based on [```meta_query```](https://codex.wordpress.org/Class_Reference/WP_Meta_Query#Accepted_Arguments) and [```tax_query```](https://codex.wordpress.org/Class_Reference/WP_Query#Taxonomy_Parameters) parameters? This is exactly what ```wp-kit/magic-meta``` handles.
 
