@@ -1,7 +1,7 @@
 {
 	"name": "wp-kit/magic-meta",
 	"description": "A wp-kit component that handles Eloquent appending and querying of PostMeta",
-	"keywords": ["wordpress", "themosis", "oop", "magic meta"],
+	"keywords": ["wordpress", "themosis", "assley", "wp-kit", "eloquent", "postmeta", "oop", "magic meta"],
 	"homepage" : "https://github.com/wp-kit/magic-meta",
 	"license": "MIT",
 	"authors": [
