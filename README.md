@@ -16,9 +16,9 @@ composer require "wp-kit/magic-meta"
 
 ### Model
 
-```wp-kit/magic-meta``` comes with two traits, so all you need to do is include these in your Model. 
+```wp-kit/magic-meta``` comes with two traits, so all you need to do is include these in your model. 
 
-Based on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) you can the Post model provided and use the Magic Meta trait.
+Based on [```drewjbartlett/wordpress-eloquent```](https://github.com/drewjbartlett/wordpress-eloquent) you can the ```Post``` model provided and use the ```IsMagic``` trait.
 
 ```wp-kit/magic-meta``` relies on a ```::getMeta``` method on the Model to return the ```meta_value```, this is exactly what ```drewjbartlett/wordpress-eloquent``` provides, but in theory you can use any WordPress Eloquent ORM provider that provides the same method and response.
 
