@@ -21,12 +21,5 @@
         "psr-4": {
             "WPKit\\MagicMeta\\": "src/MagicMeta" 
         }
-    },
-    "config": {
-		"preferred-install": "dist"
-	},
-	"repositories": [
-	],
-	"scripts": {
-	}
+    }
 }
