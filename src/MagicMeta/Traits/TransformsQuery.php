@@ -14,6 +14,9 @@
 	     */
 		protected function scopeTransformQuery( Builder $query, Request $request ) {
 				
+			/**
+			 * Check if query has search term
+			**/
 			if( ! empty( $request->get('s') ) ) {
 				
 				$query->where( 'post_title', 'like', '%' . $request->get('s') . '%' );
@@ -34,6 +37,9 @@
 				
 			}
 			
+			/**
+			 * Check if query has meta query parameter
+			**/
 			if( ! empty( $request->get('meta_query') ) ) {
 			
 				foreach($request->get('meta_query') as $meta_query) {
@@ -60,6 +66,9 @@
 				
 			}
 
+			/**
+			 * Check if query has taxonomy query parameter
+			**/
 			if( ! empty( $request->get('tax_query') ) ) {
 				
 				$tax_queries = array_map(function($tax_query) {
@@ -121,6 +130,9 @@
 				
 			}
 			
+			/**
+			 * Check if query includes any magic meta parameterd
+			**/
 			if( $magic_meta = array_filter( $request->only( $this->getMagicMeta() ) ) ) {
 				
 				foreach($magic_meta as $key => $meta) {
