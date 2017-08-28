@@ -79,6 +79,10 @@ class SomePostTypeController extends Controller {
 }
 ```
 
+## To Do
+
+* Make transformQuery agnostic to Request parameters, using Collection instead in case users are using jsonapi standard etc.
+
 ## Requirements
 
 Wordpress 4+
