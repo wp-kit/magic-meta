@@ -2,7 +2,7 @@
 
 	namespace WPKit\MagicMeta\Traits;
 	
-	use Illuminate\Database\Query\Builder;
+	use Illuminate\Database\Eloquent\Builder;
 	use Illuminate\Http\Request;
 	
 	trait TransformsQuery {
@@ -12,7 +12,7 @@
 	     *
 	     * @return QueryBuilder
 	     */
-		protected function scopeTransformQuery( Builder $query, Request $request ) {
+		public function scopeTransformQuery( Builder $query, Request $request ) {
 				
 			/**
 			 * Check if query has search term
